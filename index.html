@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>four power</title>
+	<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+</head>
+<body>
+<!-- gameMap -->
+
+<!-- elementPanel -->
+	<div class="game" id="gameMap">
+
+		<div class="game__preloader" id="preloader">
+			<div class="game__preload"></div>
+		</div>
+
+		<div class="game__panel shadow">
+			<div class="game__panelLine" id="elementPanel">
+				<div class="element_static" data-name="fire" style="background-image: url(../image/fire.webp)"></div>
+				<div class="element_static" data-name="water" style="background-image: url(../image/water.jpg)"></div>
+				<div class="element_static" data-name="wind" style="background-image: url(../image/wind.jpg)"></div>
+				<div class="element_static" data-name="mud" style="background-image: url(../image/mud.jpg)"></div>
+			</div>
+		</div>
+<!-- / elementPanel -->
+
+<!-- Message -->
+		<div class="game__message close shadow" id="message">
+			<img src="favicon.jpg" alt="game" class="game__messageImage" id="messageImage">
+			<div class="game__messageText">
+				<div class="game__messageTitle" id="messageTitle">
+					Какое либо объявление
+				</div>
+				<div class="game__description" id="messageDescription">
+					Какое-либо сообщение!
+				</div>
+			</div>
+		</div>
+<!-- / Message -->
+
+<!-- меню -->
+		<div class="game__menu close shadow" id="menu">
+				<div class="menu__closeButton" id="closeButton"></div>
+				<div class="game__rule menuItem">
+					<div class="game__ruleTitle close" data-detail="true">Правила игры</div>
+					<div class="game__ruleDescription" id="ruleText">
+					Эта игра про собирание элементов. Можно объединять до трёх элементов и получать новый. Сжульничать не выйдет, если накидать все элементы то ничего не произойдёт.	
+					</div>
+				</div>
+				<div class="game__rule menuItem">
+					<div class="game__ruleTitle close" data-detail="true">Общие сведения</div>
+					<div class="game__ruleDescription">
+					Автор: Барабанщиков Иван Николаевич	
+					</div>
+				</div>
+				<div class="game__rule menuItem">
+					<div class="game__ruleTitle close" id="restart" data-detail="true">Начать игру заново</div>
+					<div class="game__alertRestart">
+						<div class="game__alertTitle">Вы уверены?</div>
+						<div class="game__alertButtons">
+							<div class="game__alertYes" id="restartYes">Да</div>
+							<div class="game__alertNo" id="restartNo">Нет</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / меню -->
+			<!-- treshHolder -->
+
+<div class="treshHolder shadow" id="treshHolder"></div>
+<div class="trashAll shadow" id="trashAll">delete all</div>
+<!-- / treshHolder -->
+
+<!-- hint -->
+	<div class="hint close shadow" id="hint">
+		<div class="hint__closeButton" id="hintCloseButton">X</div>
+		<img src="image/hint.png" alt="hint" class="hint__image">
+		<div class="hint__descrition" id="hintDescription">
+			Подсказка для пользователя
+		</div>
+	</div>
+<!-- / hint -->
+
+<!-- / gameMap -->
+	</div>
+
+
+
+
+	<script type="text/javascript" src="script/general.js"></script>
+</body>
+</html>
